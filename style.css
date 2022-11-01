@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* background picture */
+.wrapper{
+    background: url(Dark-Wallpaper-1920x1080-1.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* navbar color scheme */
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* top left logo of my website */
+.logo{
+    width: 140px;
+    height: auto;
+    padding: 20px 100px;
+}
+
+/* positions of the unordered list in navbar */
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+/* look and feel of the options in navbar */
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+/* what the anchor content must look like b*/
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/* wrapper of navbar */
+.wrapper .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+/* Welcome color scheme */
+.center h1{
+    color: #FAF9F6;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+
+/* contact details style and location */
+.center h2{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 850px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* location of home buttons */
+.center .buttons{
+    margin: 35px 280px;
+}
+
+/* shape of the button on home page */
+.buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid #cc0000;
+    outline: none;
+    cursor: ;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+/* buttons in welcome page */
+.buttons .btn{
+    margin-left: 25px;
+}
+
+/* color when hovering over content in navbar */
+.buttons button:hover{
+    background: #cc0000
+}
+
+/* hovering over content, content look and style */
+.navbar ul li a.active
+.navbar ul li a:hover{
+    background: red;
+    border-radius: 2px;
+}
+
+/* navbar background */
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* moving content in nav bar in line with the background navbar */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* look of the content in navbar */
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* hover over content to highlight content */
+nav ul li a:hover{
+    color: red;
+}
+
+/* content of about us page look and location */
+.bio{
+    color: #FAF9F6;
+    font-size: 25px;
+    font-weight: bold;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+
+}
+
+/* skills exp content look and location */
+.skills_exp{
+   color: #FAF9F6;
+   font-size: 25px;
+    font-weight: bold;
+    width: 1000px;
+   text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+
+}
+
+/* work exp content style and location */
+.work{
+    color: #FAF9F6;
+    font-size: 25px;
+    font-weight: bold;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+}
+
+/* project/portfolio content style and location */
+.projects{
+    color: #FAF9F6;
+    font-size: 25px;
+    font-weight: bold;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* blogs content style and location */
+.blogs{
+    color: #FAF9F6;
+    font-size: 25px;
+    font-weight: bold;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* button for contact detail content style and location */
+.contact_details{
+    color: #FAF9F6;
+    font-size: 25px;
+    font-weight: bold;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+}
