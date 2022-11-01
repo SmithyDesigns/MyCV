@@ -8,10 +8,24 @@
     <link rel="stylesheet" href="css_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Resume</title>
+    <style>
+      .card {
+          box-sizing: content-box;
+          cursor: pointer;
+          font-family: sans-serif;
+          background-color: #4D4D4F;
+          border: none;
+          color: white;
+          padding: 12px 30px;
+          font-size: 20px;
+      }
+
+   </style>
 </head>
 
 <body>
-    <section class="main-section">
+<button class="card" id="pdfButton" name="download"><b>Download</b></button>
+    <section class="main-section" id="generatePDF">
         <div class="left-part">
             <div class="photo-container">
 <!--                add personal picture-->
@@ -114,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <div class="right-part">
@@ -195,11 +209,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="download_Btn"><button class="btn"><i class="fa fa-download"></i>Download</button></div>
+<!--                    <div class="download_Btn"><button class="btn"><i class="fa fa-download" ></i><a href="download">Download</a></button></div>-->
                 </div>
             </div>
         </div>
     </section>
+    <script>
+      var button = document.getElementById("pdfButton");
+      var makepdf = document.getElementById("generatePDF");
+      button.addEventListener("click", function () {
+         var mywindow = window.open("", "PRINT", "height=600,width=600");
+         mywindow.document.write(makepdf.innerHTML);
+         mywindow.document.close();
+         mywindow.focus();
+         mywindow.print();
+         return true;
+      });
+   </script>
 
 </body>
 
